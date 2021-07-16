@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\GLAD\src\glad.c" />
+    <ClCompile Include="include\glad\glad.c" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
