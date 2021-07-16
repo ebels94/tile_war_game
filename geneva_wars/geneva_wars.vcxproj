@@ -20,10 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="include\glad\glad.c" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -86,8 +90,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\scott\source\repos\geneva_wars\geneva_wars\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\scott\source\repos\geneva_wars\geneva_wars\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>

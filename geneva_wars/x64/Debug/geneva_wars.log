@@ -1,5 +1,5 @@
-﻿  glad.c
-  Main.cpp
-  Window.cpp
+﻿  Main.cpp
+C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\Input.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Renderer.cpp
   Generating Code...
-  geneva_wars.vcxproj -> C:\Users\scott\source\repos\geneva_wars\x64\Debug\geneva_wars.exe
+  geneva_wars.vcxproj -> C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe
