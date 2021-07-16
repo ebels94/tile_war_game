@@ -1,6 +1,8 @@
 #pragma once
 #include "Window.h"
 #include "Shader.h"
+#include "Texture.h"
+
 class Renderer
 {
 public:
@@ -10,5 +12,6 @@ public:
 	void loadTextures();
 private:
 	Shader* ourShader;
+	std::vector<Texture*> textures;
 };
 
