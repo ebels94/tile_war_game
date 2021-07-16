@@ -1,5 +1,2 @@
-﻿  Main.cpp
-C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\Input.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Renderer.cpp
-  Generating Code...
+﻿  Renderer.cpp
   geneva_wars.vcxproj -> C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe

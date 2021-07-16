@@ -6,7 +6,9 @@ int main() {
     Window* window = new Window();  
     Input input(window);
     Renderer * renderer = new Renderer();
-    
+    renderer->loadShaders();
+    renderer->loadTextures();
+
     // render loop
     while (!glfwWindowShouldClose(window->getWindow()))
     {
