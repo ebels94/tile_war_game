@@ -1,16 +1,13 @@
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image/stb_image.h"
-
 #include "Renderer.h"
-#include <iostream>
-
 #define NUMTEXTURES 1
 
-Renderer::Renderer() {
 
-}
+Renderer::Renderer(Shader *shader, std::vector<Texture*> *tex) : 
+ourShader(shader),
+textures(tex)
+{}
 
-unsigned int VBO, VAO, EBO;
+
 
 void Renderer::renderFrame() {
 
@@ -20,19 +17,19 @@ void Renderer::renderFrame() {
     glClear(GL_COLOR_BUFFER_BIT);
 
     // bind Texture
-    for (int i = 0; i < textures.size(); i++) {
-        glBindTexture(GL_TEXTURE_2D, textures.at(i)->getTextureID());
+    for (int i = 0; i < textures->size(); i++) {
+        glBindTexture(GL_TEXTURE_2D, textures->at(i)->getTextureID());
     }
     //glBindTexture(GL_TEXTURE_2D, texture);
 
     // render container
     ourShader->use();
-    glBindVertexArray(VAO);
+    glBindVertexArray(State::VAO);
     glDrawElements(GL_TRIANGLES, 6 * NUMTEXTURES , GL_UNSIGNED_INT, 0);
 
 }
 
-
+/*
 void Renderer::loadShaders() {
 	ourShader = new Shader("Shaders/shader.vs", "Shaders/shader.fs");
 }
@@ -83,22 +80,6 @@ void Renderer::loadTextures() {
         glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
         glEnableVertexAttribArray(2);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         unsigned int texture;
         glGenTextures(1, &texture);
         glBindTexture(GL_TEXTURE_2D, texture); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
@@ -129,4 +110,4 @@ void Renderer::loadTextures() {
   //  }
         
 }
-
+*/

@@ -1,13 +1,16 @@
+#include "TextureLoader.h"
 #include "Window.h"
 #include "Input.h"
 #include "Renderer.h"
+#include "GlobalState.h"
 
 int main() { 
-    Window* window = new Window();  
+    Window *window = new Window();  
     Input input(window);
-    Renderer * renderer = new Renderer();
-    renderer->loadShaders();
-    renderer->loadTextures();
+    Shader *shader = new Shader("Shaders/shader.vs", "Shaders/shader.fs");
+    TextureLoader loader;
+    std::vector<Texture*> textures = loader.loadTextures();
+    Renderer *renderer = new Renderer(shader, &textures);
 
     // render loop
     while (!glfwWindowShouldClose(window->getWindow()))
@@ -26,5 +29,7 @@ int main() {
     glfwTerminate();
     return 0;
 };
+
+
 
 

@@ -1,9 +1,7 @@
 #include "Input.h"
 
 
-Input::Input(Window* w) : window(w) {
-
-}
+Input::Input(Window* w) : window(w) {}
 
 void Input::processInput()
 { 
