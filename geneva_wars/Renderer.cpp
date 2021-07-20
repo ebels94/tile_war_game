@@ -2,14 +2,10 @@
 #define NUMTEXTURES 1
 
 
-Renderer::Renderer(Shader *shader, std::vector<Texture*> *tex) : 
-ourShader(shader),
-textures(tex)
-{}
+Renderer::Renderer() {};
 
 
-
-void Renderer::renderFrame() {
+void Renderer::renderFrame(Shader* shader, std::vector<Texture*>* textures) {
 
     // render
         // ------
@@ -23,7 +19,7 @@ void Renderer::renderFrame() {
     //glBindTexture(GL_TEXTURE_2D, texture);
 
     // render container
-    ourShader->use();
+    shader->use();
     glBindVertexArray(State::VAO);
     glDrawElements(GL_TRIANGLES, 6 * NUMTEXTURES , GL_UNSIGNED_INT, 0);
 

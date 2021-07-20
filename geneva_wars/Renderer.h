@@ -8,10 +8,9 @@
 class Renderer
 {
 public:
-	Renderer(Shader *shader, std::vector<Texture*> *tex);
-	void renderFrame();
+	Renderer();
+	void renderFrame(Shader* shader, std::vector<Texture*>* textures);
 private:
-	Shader* ourShader;
-	std::vector<Texture*> *textures;
+
 };
 

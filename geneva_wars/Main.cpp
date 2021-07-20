@@ -7,10 +7,10 @@
 int main() { 
     Window *window = new Window();  
     Input input(window);
-    Shader *shader = new Shader("Shaders/shader.vs", "Shaders/shader.fs");
+    Shader shader("Shaders/shader.vs", "Shaders/shader.fs");
     TextureLoader loader;
     std::vector<Texture*> textures = loader.loadTextures();
-    Renderer *renderer = new Renderer(shader, &textures);
+    Renderer *renderer = new Renderer();
 
     // render loop
     while (!glfwWindowShouldClose(window->getWindow()))
@@ -19,7 +19,7 @@ int main() {
        input.processInput();
 
         // rendering commands here
-       renderer->renderFrame();
+       renderer->renderFrame(&shader, &textures);
 
         // check and call events and swap the buffers
         glfwPollEvents();
