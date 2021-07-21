@@ -19,12 +19,15 @@ int main() {
     mapLoader.print_map(); //for testing
 
     //targetting test----------------------------------------------------------------------
-    StandardInfantry bob(2,2);
+    StandardInfantry bob(2, 2, 0, 0);
+    StandardInfantry jim(2, 1, 0, 0);
+
     std::vector<std::pair<int, int>> attackTargets = bob.get_attack_tiles();
     for (int i = 0; i < attackTargets.size(); i++) {
         std::cout << attackTargets[i].first << " " << attackTargets[i].second << std::endl;
     }
     //-------------------------------------------------------------------------------------
+    
 
     // render loop
     while (!glfwWindowShouldClose(window->getWindow()))

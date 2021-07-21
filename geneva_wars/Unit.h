@@ -26,6 +26,8 @@ public:
 	int remaining_movement;
 	Weapon* primary_weapon;
 	Weapon* secondary_weapon;
+	Ammunition primary_ammo;
+	Ammunition secondary_ammo;
 	Armour armour_type;
 private:
 

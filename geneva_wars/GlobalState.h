@@ -21,7 +21,8 @@ struct Tile {
 	Biome biome;
 	Weather weather;
 	Hazard hazard;
-	//Unit* occupier;
+	int occupier_team;
+	int occupier_ind;
 };
 
 struct State {

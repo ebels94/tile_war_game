@@ -5,7 +5,7 @@
 class StandardInfantry : public Unit
 {
 public:
-	StandardInfantry(int x, int y, int owner, int team);
+	StandardInfantry(int x, int y, int own, int tm);
 	StandardInfantry(int x, int y);
 	void primary_attack(int x, int y);
 	void secondary_attack(int x, int y);

@@ -13,6 +13,8 @@ void MapLoader::load_map(std::string map_path) {
 			State::GAME_BOARD[i][j].biome = (Biome)biome;
 			State::GAME_BOARD[i][j].weather = (Weather)weather;
 			State::GAME_BOARD[i][j].hazard = (Hazard)hazard;
+			State::GAME_BOARD[i][j].occupier_team = -1;
+			State::GAME_BOARD[i][j].occupier_ind = -1;
 		}
 	}
 	mapFile.close();

@@ -1,6 +1,14 @@
 #include "StandardInfantry.h"
-StandardInfantry::StandardInfantry(int x, int y, int owner, int team) {
-
+StandardInfantry::StandardInfantry(int x, int y, int own, int tm) {
+	x_coordinate = x;
+	y_coordinate = y;
+	owner = own;
+	team = tm;
+	remaining_hp = MAX_HP;
+	remaining_movement = MAX_MOVEMENT;
+	armour_type = Armour::LIGHT;
+	primary_ammo = Ammunition::BULLETS;
+	primary_ammo = Ammunition::EXPLOSIVE
 }
 StandardInfantry::StandardInfantry(int x, int y) {
 	x_coordinate = x;
@@ -10,14 +18,16 @@ StandardInfantry::StandardInfantry(int x, int y) {
 	remaining_hp = MAX_HP;
 	remaining_movement = MAX_MOVEMENT;
 	armour_type = Armour::LIGHT;
+	primary_ammo = Ammunition::BULLETS;
+	primary_ammo = Ammunition::EXPLOSIVE;
 }
 
 void StandardInfantry::primary_attack(int x, int y) {
-	primary_weapon->attack_target(x, y);
+	
 }
 
 void StandardInfantry::secondary_attack(int x, int y) {
-
+	
 }
 
 std::vector<std::pair<int, int>> StandardInfantry::get_attack_tiles() {
