@@ -1,6 +1,12 @@
 #pragma once
-#include <glad/glad.h>
+#include "glew-2.1.0\include\GL\glew.h"
+
+//#include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+
+//#include "glew-2.1.0\include\GL\glew.h"
+
 #include <iostream>
 #include <vector>
 class Window

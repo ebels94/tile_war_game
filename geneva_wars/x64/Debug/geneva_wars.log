@@ -1,8 +1,87 @@
-﻿  StandardInfantry.cpp
-C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\StandardInfantry.cpp(38,35): warning C4018: '<=': signed/unsigned mismatch
-C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\StandardInfantry.cpp(40,37): warning C4018: '<=': signed/unsigned mismatch
-  Texture.cpp
-  Window.cpp
-  Generating Code...
-  LINK : C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe not found or not built by the last incremental link; performing full link
-  geneva_wars.vcxproj -> C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe
+﻿  Window.cpp
+TextureLoader.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_convert_iphone_png_to_rgb already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_failure_reason already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_hdr_to_ldr_gamma already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_hdr_to_ldr_scale already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_image_free already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_info already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_info_from_callbacks already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_info_from_file already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_info_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_16_bit already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_16_bit_from_callbacks already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_16_bit_from_file already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_16_bit_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_hdr already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_hdr_from_callbacks already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_hdr_from_file already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_is_hdr_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_ldr_to_hdr_gamma already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_ldr_to_hdr_scale already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_16 already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_16_from_callbacks already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_16_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_from_callbacks already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_from_file already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_from_file_16 already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_load_gif_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_loadf already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_loadf_from_callbacks already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_loadf_from_file already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_loadf_from_memory already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_set_flip_vertically_on_load already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_set_unpremultiply_on_load already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_zlib_decode_buffer already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_zlib_decode_malloc already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_zlib_decode_noheader_buffer already defined in Texture.obj
+TextureLoader.obj : error LNK2005: stbi_zlib_decode_noheader_malloc already defined in Texture.obj
+GLDebug.obj : error LNK2019: unresolved external symbol "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl fmt::v7::detail::vformat(class fmt::v7::basic_string_view<char>,struct fmt::v7::format_args)" (?vformat@detail@v7@fmt@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string_view@D@23@Uformat_args@23@@Z) referenced in function "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl fmt::v7::format<char [31],char>(char const (&)[31])" (??$format@$$BY0BP@D$$VD@v7@fmt@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAY0BP@$$CBD@Z)
+GLDebug.obj : error LNK2019: unresolved external symbol "void __cdecl fmt::v7::detail::vprint_mojibake(struct _iobuf *,class fmt::v7::basic_string_view<char>,struct fmt::v7::format_args)" (?vprint_mojibake@detail@v7@fmt@@YAXPEAU_iobuf@@V?$basic_string_view@D@23@Uformat_args@23@@Z) referenced in function "void __cdecl fmt::v7::print<char [14],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,char const (&)[5],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char>(char const (&)[14],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,char const (&)[5],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&)" (??$print@$$BY0O@DAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAY04$$CBDAEBV12@V12@D@v7@fmt@@YAXAEAY0O@$$CBDAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAY04$$CBD1$$QEAV23@@Z)
+GLDebug.obj : error LNK2019: unresolved external symbol "void __cdecl fmt::v7::vprint(class fmt::v7::basic_string_view<char>,struct fmt::v7::format_args)" (?vprint@v7@fmt@@YAXV?$basic_string_view@D@12@Uformat_args@12@@Z) referenced in function "void __cdecl fmt::v7::print<char [14],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,char const (&)[5],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,char>(char const (&)[14],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,char const (&)[5],class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&)" (??$print@$$BY0O@DAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAY04$$CBDAEBV12@V12@D@v7@fmt@@YAXAEAY0O@$$CBDAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAY04$$CBD1$$QEAV23@@Z)
+GLDebug.obj : error LNK2019: unresolved external symbol __imp___glewDebugMessageCallback referenced in function "void __cdecl GLDebug::enable(void)" (?enable@GLDebug@@YAXXZ)
+GLDebug.obj : error LNK2019: unresolved external symbol __imp___glewDebugMessageControl referenced in function "void __cdecl GLDebug::enable(void)" (?enable@GLDebug@@YAXXZ)
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewDeleteBuffers referenced in function "public: __cdecl VertexBufferHandle::~VertexBufferHandle(void)" (??1VertexBufferHandle@@QEAA@XZ)
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewGenBuffers referenced in function "public: __cdecl VertexBufferHandle::VertexBufferHandle(void)" (??0VertexBufferHandle@@QEAA@XZ)
+TextureLoader.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewCreateProgram referenced in function "public: __cdecl ShaderProgramHandle::ShaderProgramHandle(void)" (??0ShaderProgramHandle@@QEAA@XZ)
+Shader.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewCreateShader referenced in function "public: __cdecl ShaderHandle::ShaderHandle(unsigned int)" (??0ShaderHandle@@QEAA@I@Z)
+Shader.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewDeleteProgram referenced in function "public: __cdecl ShaderProgramHandle::~ShaderProgramHandle(void)" (??1ShaderProgramHandle@@QEAA@XZ)
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewDeleteShader referenced in function "public: __cdecl ShaderHandle::~ShaderHandle(void)" (??1ShaderHandle@@QEAA@XZ)
+Shader.obj : error LNK2001: unresolved external symbol __imp___glewDeleteShader
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewDeleteVertexArrays referenced in function "public: __cdecl VertexArrayHandle::~VertexArrayHandle(void)" (??1VertexArrayHandle@@QEAA@XZ)
+GLHandles.obj : error LNK2019: unresolved external symbol __imp___glewGenVertexArrays referenced in function "public: __cdecl VertexArrayHandle::VertexArrayHandle(void)" (??0VertexArrayHandle@@QEAA@XZ)
+TextureLoader.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+Renderer.obj : error LNK2019: unresolved external symbol __imp___glewBindVertexArray referenced in function "public: void __cdecl Renderer::renderFrame(class Shader *,class std::vector<class Texture *,class std::allocator<class Texture *> > *)" (?renderFrame@Renderer@@QEAAXPEAVShader@@PEAV?$vector@PEAVTexture@@V?$allocator@PEAVTexture@@@std@@@std@@@Z)
+TextureLoader.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+VertexArray.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewAttachShader referenced in function "public: __cdecl Shader::Shader(char const *,char const *)" (??0Shader@@QEAA@PEBD0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewCompileShader referenced in function "public: __cdecl Shader::Shader(char const *,char const *)" (??0Shader@@QEAA@PEBD0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewGetProgramInfoLog referenced in function "private: void __cdecl Shader::checkCompileErrors(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?checkCompileErrors@Shader@@AEAAXIV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewGetProgramiv referenced in function "private: void __cdecl Shader::checkCompileErrors(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?checkCompileErrors@Shader@@AEAAXIV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewGetShaderInfoLog referenced in function "private: void __cdecl Shader::checkCompileErrors(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?checkCompileErrors@Shader@@AEAAXIV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewGetShaderiv referenced in function "private: void __cdecl Shader::checkCompileErrors(unsigned int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?checkCompileErrors@Shader@@AEAAXIV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewGetUniformLocation referenced in function "public: void __cdecl Shader::setBool(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)const " (?setBool@Shader@@QEBAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewLinkProgram referenced in function "public: __cdecl Shader::Shader(char const *,char const *)" (??0Shader@@QEAA@PEBD0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewShaderSource referenced in function "public: __cdecl Shader::Shader(char const *,char const *)" (??0Shader@@QEAA@PEBD0@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewUniform1f referenced in function "public: void __cdecl Shader::setFloat(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,float)const " (?setFloat@Shader@@QEBAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewUniform1i referenced in function "public: void __cdecl Shader::setBool(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)const " (?setBool@Shader@@QEBAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z)
+Shader.obj : error LNK2019: unresolved external symbol __imp___glewUseProgram referenced in function "public: void __cdecl Shader::use(void)" (?use@Shader@@QEAAXXZ)
+TextureLoader.obj : error LNK2019: unresolved external symbol __imp___glewBindBuffer referenced in function "public: class std::vector<class Texture *,class std::allocator<class Texture *> > __cdecl TextureLoader::loadTextures(void)" (?loadTextures@TextureLoader@@QEAA?AV?$vector@PEAVTexture@@V?$allocator@PEAVTexture@@@std@@@std@@XZ)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+TextureLoader.obj : error LNK2019: unresolved external symbol __imp___glewBufferData referenced in function "public: class std::vector<class Texture *,class std::allocator<class Texture *> > __cdecl TextureLoader::loadTextures(void)" (?loadTextures@TextureLoader@@QEAA?AV?$vector@PEAVTexture@@V?$allocator@PEAVTexture@@@std@@@std@@XZ)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+TextureLoader.obj : error LNK2019: unresolved external symbol __imp___glewEnableVertexAttribArray referenced in function "public: class std::vector<class Texture *,class std::allocator<class Texture *> > __cdecl TextureLoader::loadTextures(void)" (?loadTextures@TextureLoader@@QEAA?AV?$vector@PEAVTexture@@V?$allocator@PEAVTexture@@@std@@@std@@XZ)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+TextureLoader.obj : error LNK2019: unresolved external symbol __imp___glewVertexAttribPointer referenced in function "public: class std::vector<class Texture *,class std::allocator<class Texture *> > __cdecl TextureLoader::loadTextures(void)" (?loadTextures@TextureLoader@@QEAA?AV?$vector@PEAVTexture@@V?$allocator@PEAVTexture@@@std@@@std@@XZ)
+VertexBuffer.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+TextureLoader.obj : error LNK2019: unresolved external symbol __imp___glewGenerateMipmap referenced in function "public: class std::vector<class Texture *,class std::allocator<class Texture *> > __cdecl TextureLoader::loadTextures(void)" (?loadTextures@TextureLoader@@QEAA?AV?$vector@PEAVTexture@@V?$allocator@PEAVTexture@@@std@@@std@@XZ)
+C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe : fatal error LNK1120: 31 unresolved externals
