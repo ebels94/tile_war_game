@@ -1,9 +1,8 @@
-﻿  Main.cpp
-C:\Users\scott\source\repos\geneva_wars\geneva_wars\Input.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  MapLoader.cpp
-C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(9,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(10,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(26,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(27,21): warning C4018: '<': signed/unsigned mismatch
+﻿  StandardInfantry.cpp
+C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\StandardInfantry.cpp(38,35): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Tylar\source\repos\tile_war_game\geneva_wars\StandardInfantry.cpp(40,37): warning C4018: '<=': signed/unsigned mismatch
+  Texture.cpp
+  Window.cpp
   Generating Code...
-  geneva_wars.vcxproj -> C:\Users\scott\source\repos\geneva_wars\x64\Debug\geneva_wars.exe
+  LINK : C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe not found or not built by the last incremental link; performing full link
+  geneva_wars.vcxproj -> C:\Users\Tylar\source\repos\tile_war_game\x64\Debug\geneva_wars.exe

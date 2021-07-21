@@ -8,7 +8,7 @@ StandardInfantry::StandardInfantry(int x, int y, int own, int tm) {
 	remaining_movement = MAX_MOVEMENT;
 	armour_type = Armour::LIGHT;
 	primary_ammo = Ammunition::BULLETS;
-	primary_ammo = Ammunition::EXPLOSIVE
+	primary_ammo = Ammunition::EXPLOSIVE;
 }
 StandardInfantry::StandardInfantry(int x, int y) {
 	x_coordinate = x;
