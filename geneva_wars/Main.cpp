@@ -3,6 +3,8 @@
 #include "Input.h"
 #include "Renderer.h"
 #include "GlobalState.h"
+#include "StandardInfantry.h"
+#include "MapLoader.h"
 
 int main() { 
     Window *window = new Window();  
@@ -11,6 +13,18 @@ int main() {
     TextureLoader loader;
     std::vector<Texture*> textures = loader.loadTextures();
     Renderer *renderer = new Renderer();
+    
+    MapLoader mapLoader;
+    mapLoader.load_map("Maps/testmap.gwmf");
+    mapLoader.print_map(); //for testing
+
+    //targetting test----------------------------------------------------------------------
+    StandardInfantry bob(2,2);
+    std::vector<std::pair<int, int>> attackTargets = bob.get_attack_tiles();
+    for (int i = 0; i < attackTargets.size(); i++) {
+        std::cout << attackTargets[i].first << " " << attackTargets[i].second << std::endl;
+    }
+    //-------------------------------------------------------------------------------------
 
     // render loop
     while (!glfwWindowShouldClose(window->getWindow()))
@@ -29,7 +43,6 @@ int main() {
     glfwTerminate();
     return 0;
 };
-
 
 
 

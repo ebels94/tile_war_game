@@ -1,3 +1,9 @@
 ﻿  Main.cpp
 C:\Users\scott\source\repos\geneva_wars\geneva_wars\Input.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  MapLoader.cpp
+C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(9,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(10,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(26,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\scott\source\repos\geneva_wars\geneva_wars\MapLoader.cpp(27,21): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   geneva_wars.vcxproj -> C:\Users\scott\source\repos\geneva_wars\x64\Debug\geneva_wars.exe
