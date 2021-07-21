@@ -2,16 +2,15 @@
 #include "Window.h"
 #include "Shader.h"
 #include "Texture.h"
+#include "GlobalState.h"
+#include <iostream>
 
 class Renderer
 {
 public:
 	Renderer();
-	void renderFrame();
-	void loadShaders();
-	void loadTextures();
+	void renderFrame(Shader* shader, std::vector<Texture*>* textures);
 private:
-	Shader* ourShader;
-	std::vector<Texture*> textures;
+
 };
 
